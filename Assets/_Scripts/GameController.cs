@@ -1,11 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class GameController : MonoBehaviour {
 
     //public instance variable
     public int enemyNumber;
     public GameObject enemy;
+
+  
 
     // Use this for initialization
     void Start()

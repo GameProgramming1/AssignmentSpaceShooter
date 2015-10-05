@@ -9,6 +9,7 @@ public class PlayerCollider : MonoBehaviour {
     public Text livesLabel;
     public Text gameOverLabel;
     public Text finalScoreLabel;
+    public Text congratulations;
     public int _scoreValue = 0;
     public int _liveValue = 5;
 
@@ -29,6 +30,8 @@ public class PlayerCollider : MonoBehaviour {
         this._EndingSound = this._audioSources[3];
         this.gameOverLabel.enabled = false;
         this.finalScoreLabel.enabled = false;
+        this.congratulations.enabled = false;
+
 
         this._setScore();
     }
@@ -43,7 +46,7 @@ public class PlayerCollider : MonoBehaviour {
     {
         if (otherGameObject.tag == "Powerpill")
         {
-            this._PowerpointAudioSource.Play(); //play yay sound
+            this._PowerpointAudioSource.Play(); //play zap sound
             this._scoreValue += 100; //add 100 points
         }
         else
