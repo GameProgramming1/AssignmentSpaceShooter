@@ -9,7 +9,11 @@ public class BulletMover : MonoBehaviour {
 	void Start () {
         GetComponent<Rigidbody2D>().velocity = transform.up * speed;
 	}
-	
+
+    void OnBecameInvisible()
+    {
+        Destroy(gameObject);
+    }
 	// Update is called once per frame
 	void Update () {
 	

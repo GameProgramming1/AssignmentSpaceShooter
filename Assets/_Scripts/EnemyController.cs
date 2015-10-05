@@ -67,16 +67,16 @@ public class EnemyController : MonoBehaviour {
         gameObject.GetComponent<Transform>().position = resetPosition;
     }
 
-    //void OnTriggerEnter2D(Collider2D otherGameObject)
-    //{
-    //    if (otherGameObject.tag == "bullet")
-    //    {
+    void OnTriggerEnter2D(Collider2D otherGameObject)
+    {
+        if (otherGameObject.tag == "bullet")
+        {
 
-    //        Destroy(otherGameObject);
+            Destroy(otherGameObject);
 
-    //        Destroy(gameObject);
+            Destroy(gameObject);
 
-    //    }
-    //}
+        }
+    }
     
 }
