@@ -1,4 +1,11 @@
-﻿using UnityEngine;
+﻿/*Source File Name:EnemyController.cs
+ * Author: Sukhpreet Sekhon
+ * Last Modified By: Sukhpreet Sekhon
+ * Date Of Modification:05-10-2015
+ * Program Description: Script to control the speed, drift and boundary of the enemy planes
+*/
+
+using UnityEngine;
 using System.Collections;
 
 

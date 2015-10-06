@@ -1,4 +1,11 @@
-﻿using UnityEngine;
+﻿/*Source File Name:PlayerCollider.cs
+ * Author: Sukhpreet Sekhon
+ * Last Modified By: Sukhpreet Sekhon
+ * Date Of Modification:05-10-2015
+ * Program Description: Script to display scoreboard and control player collider with enemies and power sources
+*/
+
+using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -42,6 +49,7 @@ public class PlayerCollider : MonoBehaviour {
 
     }
 
+    
     void OnTriggerEnter2D(Collider2D otherGameObject)
     {
         if (otherGameObject.tag == "Powerpill")
@@ -49,6 +57,7 @@ public class PlayerCollider : MonoBehaviour {
             this._PowerpointAudioSource.Play(); //play zap sound
             this._scoreValue += 100; //add 100 points
         }
+
         else
         {
             this._EnemyAudioSource.Play();

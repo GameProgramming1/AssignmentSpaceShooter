@@ -1,4 +1,11 @@
-﻿using UnityEngine;
+﻿/*Source File Name:PlayerController.cs
+ * Author: Sukhpreet Sekhon
+ * Last Modified By: Sukhpreet Sekhon
+ * Date Of Modification:05-10-2015
+ * Program Description: Script to contrl the speed and boundary of the player and to control the bullets
+*/
+
+using UnityEngine;
 using System.Collections;
 
 public class PlayerController : MonoBehaviour {

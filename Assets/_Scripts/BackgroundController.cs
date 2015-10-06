@@ -1,4 +1,11 @@
-﻿using UnityEngine;
+﻿/*Source File Name:BackgroundController.cs
+ * Author: Sukhpreet Sekhon
+ * Last Modified By: Sukhpreet Sekhon
+ * Date Of Modification:05-10-2015
+ * Program Description: Script to move background in one direction
+*/
+
+using UnityEngine;
 using System.Collections;
 
 public class BackgroundController : MonoBehaviour {
